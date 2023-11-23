@@ -1,16 +1,16 @@
 <html>
   <head>
     <title>RxJS Fundamentals</title>
-    <meta charset="UTF-8"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@500;600;700&family=Press+Start+2P&display=swap"
       rel="stylesheet"
-/>
-    <link rel="stylesheet" href="/shared/style.scss"/>
-    <link rel="stylesheet" href="/shared/home.scss"/>
-    <link rel="icon" href="/shared/favicon.svg" type="image/svg+xml"/>
+    />
+    <link rel="stylesheet" href="/shared/style.scss" />
+    <link rel="stylesheet" href="/shared/home.scss" />
+    <link rel="icon" href="/shared/favicon.svg" type="image/svg+xml" />
   </head>
 
   <body>
@@ -23,12 +23,14 @@
             here </a
           >. You can learn more about
           <a href="https://github.com/stevekinney/rxjs-fundamentals#readme"
-            >getting started in the <code>README.md</code>
-          </a
+            >getting started in the <code>README.md</code> </a
           >.
         </p>
         <p>
-          Watch the <a href="https://frontendmasters.com/courses/rx-js/">Rx.js fundamentals course here</a>.
+          Watch the
+          <a href="https://frontendmasters.com/courses/rx-js/"
+            >Rx.js fundamentals course here</a
+          >.
         </p>
       </header>
       <section class="columns">
@@ -134,7 +136,16 @@
         </div>
         <div class="applications">
           <h2>Applications</h2>
-          <p id="production-notification" class="hidden">These are intended to be run locally. <a href="https://github.com/stevekinney/rxjs-fundamentals">Clone the repository</a> and learn more about getting started <a href="https://github.com/stevekinney/rxjs-fundamentals#readme">here</a>.</p>
+          <p id="production-notification" class="hidden">
+            These are intended to be run locally.
+            <a href="https://github.com/stevekinney/rxjs-fundamentals"
+              >Clone the repository</a
+            >
+            and learn more about getting started
+            <a href="https://github.com/stevekinney/rxjs-fundamentals#readme"
+              >here</a
+            >.
+          </p>
           <ol>
             <li>
               <a href="/applications/playground/index.html">
@@ -204,9 +215,7 @@
       if (window.location.protocol === 'https:') {
         const notification = document.getElementById('production-notification');
         if (notification) {
-          notification
-            .classList
-            .remove('hidden');
+          notification.classList.remove('hidden');
         }
       }
     </script>

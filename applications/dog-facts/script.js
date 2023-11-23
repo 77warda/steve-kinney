@@ -22,3 +22,22 @@ import {
 } from './utilities';
 
 const endpoint = 'http://localhost:3333/api/facts';
+
+const fetch$ = fromEvent(fetchButton, 'click').pipe(
+  tap(() => clearError()),
+  exhaustMap(() =>
+    fromFetch(endpoint).pipe(
+      mergeMap((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error('Something went wrong!');
+        }
+      }),
+      catchError((error) => {
+        console.error(error);
+        return of({ error: 'The stream caught an error. Cool, right?' });
+      }),
+    ),
+  ),
+);
