@@ -1,14 +1,5 @@
 import { fromEvent, interval } from 'rxjs';
-import {
-  throttleTime,
-  debounceTime,
-  delay,
-  debounce,
-  throttle,
-  scan,
-  map,
-  tap,
-} from 'rxjs/operators';
+import { debounceTime, map, tap } from 'rxjs/operators';
 
 import { renderMarkdown, deepThoughtInput, setStatus } from './utilities';
 
